@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Monteiro - Portfólio</title>
+    <!--fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--FONT-AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <link rel="stylesheet" href="/styles/sobre.css" />
+    <link rel="stylesheet" href="/styles/formacao.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css">
+    <link rel="stylesheet" href="/styles/contato.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="cabecalho container">
+            <h1 class="title-header">Douglas Monteiro</h1>
+            <nav class="menu">
+                <a href="#" class="menu-item">Inicio</a>
+                <a href="#sobre" class="menu-item">Sobre</a>
+                <a href="#formacao" class="menu-item">Formação</a>
+                <a href="#portfolio" class="menu-item">Portfólio</a>
+                <a href="#contato" class="menu-item">Contato</a>
+            </nav>
+        </div>
+    </header>
+    <main> <!-- Conteudo Principal do site -->
+        <section id="home">
+            <div class="filtro-dark"></div> <!--aplica um efeito para escurecer a imagem-->
+            <p class="title-saudacao">Bem-vindo</p>
+            <h1 class="title-home">Douglas Monteiro</h1>
+            <h2 class="sutitle-home">
+                Desenvolvedor Front-End
+            </h2>
+            <a href="#contato" class="contact-button">Contacte-me</a>
+        </section>
+        <div class="container">
+            <section id="sobre">
+                <h1 class="title-section">Sobre Mim</h1>
+                <div class="linha-section"></div>
+                <p>Sou natural de Gravataí, no Rio Grande do Sul, e atualmente trabalho como Repositor em um
+                    supermercado. Paralelamente, estou cursando Análise e Desenvolvimento de Sistemas, área pela qual me
+                    apaixonei ao descobrir o potencial criativo e lógico da programação.</p>
+
+                <p>No tempo livre, gosto de jogar videogame, assistir filmes e séries, e tocar violão. atividades que
+                    me ajudam a relaxar e recarregar as energias.
+                </p>
+            </section>
+            <section id="formacao">
+                <h1 class="title-section">Formação</h1>
+                <div class="linha-section"></div>
+                <div class="formacao-content">
+                    <ul>
+                        <li>Ensino médio completo</li>
+                        <li>Curso de WebDesigner</li>
+                        <li>Curso Superior em Análise e Desenvolvimento de Sistemas(em andamento) </li>
+                    </ul>
+                    <h2>Idiomas</h2>
+                    <div class="linha-section"></div>
+                    <ul>
+                        <li>Português Brasileiro(Fluente)</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio">
+                <h1 class="title-section">Meu Portfólio</h1>
+                <div class="linha-section"></div>
+                <!--Carousel de projetos-->
+                <div class="carousel-container">
+                    <div id="carousel">
+                        <div class="item">
+                            <img src="/img/projeto-inDecor.png" alt="Projeto Indecor">
+                            <div class="buttons">
+                                <a href="https://indecor-eight.vercel.app/">Ver Projeto</a>
+                                <a href="https://github.com/douglasmf/inDecor">Repositório</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="/img/projeto-workSpace.png " alt="Projeto WorkSpace">
+                            <div class="buttons">
+                                <a href="https://work-space-seven.vercel.app/">Ver Projeto</a>
+                                <a href="https://github.com/douglasmf/WorkSpace">Repositório</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="/img/projeto-moviesLib.png" alt="Projeto MoviesLib">
+                            <div class="buttons">
+                                <a href="https://movies-lib-psi-pied.vercel.app/">Ver Projeto</a>
+                                <a href="https://github.com/douglasmf/moviesLib">Repositório</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn prev" onclick="prevSlide()">&#10094;</button> <!--Botão para voltar um projeto-->
+                    <button class="btn next" onclick="nextSlide()">&#10095;</button>
+                    <!--Botão para ir para o próximo projeto-->
+                </div>
+            </section>
+            <section id="contato">
+                <h1 class="title-section">Entre em Contato</h1>
+                <div class="linha-section"></div>
+                <div class="contato-container">
+                    <!-- Formulário para o envio de uma mensagem -->
+                    <form>
+                        <input type="text" name="nome" placeholder="Digite seu nome..." />
+                        <input type="email" name="email" placeholder="Email..." />
+                        <textarea name="mensagem" rows="10" placeholder="Digite sua mensagem..."></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <!--Outras formas de contato -->
+                    <div class="info-contato">
+                        <h2>E-mail para contato</h2>
+                        <p><i class="fa-solid fa-envelope"></i> douglas.m.f.1995@gmail.com</p>
+                        <h2>Adicione nas redes</h2>
+                        <a href="https://github.com/DouglasMonteiro" target="_blank" id="github"><i
+                                class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/douglas-monteiro-1b0b4a1b2/" target="_blank"
+                            id="linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

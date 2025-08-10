@@ -1,0 +1,60 @@
+<p>Telefone: (51)98617-3839</p>
+                <p>Você pode me encontrar nas seguintes redes sociais:</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/douglas-monteiro-1b0b4a1b2/" target="_blank"
+                            id="linkedin"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+                    </li>
+                    <li><a href="https://github.com/DouglasMonteiro" target="_blank" id="github"><i
+                                class="fa-brands fa-github"></i>
+                            GitHub</a></li>
+                </ul>
+                <h2>Email para contato:</h2>
+                <p>douglas.m.f.1995@gmail.com</p>
+
+css
+
+#contato p{
+    font-size: 1.1rem;
+}
+
+#contato ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#contato li a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+#contato li a#linkedin{
+    background-color: #0077B5;
+}
+
+#contato li a#github{
+    background-color: var(--text-color);
+    color: #181717;
+}
+
+#contato li a#github i{
+    color: #181717;
+}
+#contato h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+#contato p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}

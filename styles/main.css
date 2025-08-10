@@ -1,0 +1,28 @@
+main{
+    position: relative;
+}
+
+.title-section{
+    text-align: center;
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+.linha-section{
+    width: 10%;
+    height: 4px;
+    background-color: var(--primary);
+    margin: 0 auto;
+    margin: 1% 0 0 0;
+}
+
+section{
+    height: 100vh;
+    scroll-margin-top: 100px;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

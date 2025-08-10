@@ -1,0 +1,82 @@
+#contato .linha-section{
+    margin-bottom: 3rem;
+}
+.contato-container{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+}
+form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: .5rem .8rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    outline: none;
+}
+textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    padding: .5rem .8rem;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    outline: none;
+}
+input::placeholder,textarea::placeholder{ 
+    color: var(--text-color);
+    opacity: .6;
+}
+input:focus, textarea:focus{
+    border: 2px solid var(--secondary-light); /*muda a cor da borda ao clickar na caixa de input*/
+}
+button{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    padding: .6rem 2rem;
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    border-radius: .5rem;
+    transition: all 0.3s ease-in-out; /*configura o tempo do efeito hover e indica que sera aplicado tanto ao posicionar o mouse em cima quanto ao retirar o mouse */
+    cursor: pointer;
+    &:hover{
+        border: 2px solid var(--secondary-light);/* troca a cor da borda ao passar o mouse sobre o button*/
+    }
+}
+.info-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-contato h2{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin: 1.5rem 0;
+}
+.info-contato p,a{
+    font-size: 1.1rem;
+}
+.info-contato a{
+    text-decoration: none;
+    padding: 0.1rem .6rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    &:hover{
+        color: var(--secondary-light); /* troca a cor do link ao passar o mouse*/
+    }
+}
+
+.info-contato a#github i{
+    color: #ffffff;
+}
+.info-contato a#linkedin{
+    margin-top: 1.5rem;
+}

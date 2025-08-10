@@ -1,0 +1,30 @@
+/*CORES DO SITE*/
+:root{
+    --dark-primary: #0D0D0D;
+    --dark-secondary: #0F1D2B;
+    --text-color: #F0F4F8;
+    --primary: #1ABC9C;
+    --secondary: #7D3C98;
+    --secondary-dark: #5A2872;
+    --secondary-light: #C960F7;
+    --filtro-dark: #000000be;
+}
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+    }
+    font-family: "Kanit", sans-serif;
+    color: var(--text-color);
+}
+/*corpo da pagina*/
+body{
+    background-color: var(--dark-primary);
+}
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
